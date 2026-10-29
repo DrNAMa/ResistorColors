@@ -6,7 +6,6 @@ Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices.JavaScript.JSType
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar
 Imports Draw
-'need to fix how 0.2 ohms is passed, check intensity line, or remove the formatting on the color panel click
 Public Class Form1
     Private reval As Int64 'resistor value
     Private d As New Shapes
