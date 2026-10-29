@@ -213,6 +213,7 @@ Public Class Form1
             valholder = valholder.Replace("S", "")
         End If
         If valholder = String.Empty Then
+            Return String.Empty
             Exit Function
         End If
         Dim howmanyzeros As Integer
