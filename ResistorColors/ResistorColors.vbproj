@@ -10,19 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="obj\Debug\net10.0-windows\.NETCoreApp,Version=v10.0.AssemblyAttributes.vb" />
-    <Compile Include="obj\Debug\net10.0-windows\ResistorColors.AssemblyInfo.vb" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="bin\Debug\net10.0-windows\Draw.xml" />
     <Content Include="bin\Debug\net10.0-windows\ResistorColors.deps.json" />
     <Content Include="bin\Debug\net10.0-windows\ResistorColors.runtimeconfig.json" />
-    <Content Include="obj\Debug\net10.0-windows\ResistorColors.designer.deps.json" />
-    <Content Include="obj\Debug\net10.0-windows\ResistorColors.designer.runtimeconfig.json" />
-    <Content Include="obj\Debug\net10.0-windows\ResistorColors.vbproj.FileListAbsolute.txt" />
-    <Content Include="obj\project.assets.json" />
-    <Content Include="obj\ResistorColors.vbproj.nuget.dgspec.json" />
     <Content Include="output_20261025_065346.ico" />
   </ItemGroup>
 
@@ -38,24 +34,6 @@
     <None Include="bin\Debug\net10.0-windows\ResistorColors.dll" />
     <None Include="bin\Debug\net10.0-windows\ResistorColors.exe" />
     <None Include="bin\Debug\net10.0-windows\ResistorColors.pdb" />
-    <None Include="obj\Debug\net10.0-windows\apphost.exe" />
-    <None Include="obj\Debug\net10.0-windows\refint\ResistorColors.dll" />
-    <None Include="obj\Debug\net10.0-windows\ref\ResistorColors.dll" />
-    <None Include="obj\Debug\net10.0-windows\Resistor.D733F1DD.Up2Date" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.assets.cache" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.dll" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.Form1.resources" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.GeneratedMSBuildEditorConfig.editorconfig" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.genruntimeconfig.cache" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.pdb" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.vbproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.vbproj.BuildWithSkipAnalyzers" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.vbproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\net10.0-windows\ResistorColors.vbproj.GenerateResource.cache" />
-    <None Include="obj\project.nuget.cache" />
-    <None Include="obj\ResistorColors.vbproj.nuget.g.props" />
-    <None Include="obj\ResistorColors.vbproj.nuget.g.targets" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,10 +55,6 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="obj\Debug\net10.0-windows\TempPE\" />
   </ItemGroup>
 
 </Project>
