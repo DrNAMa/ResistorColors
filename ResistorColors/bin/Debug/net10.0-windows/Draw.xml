@@ -1,0 +1,459 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Draw
+</name>
+</assembly>
+<members>
+<member name="T:Draw.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Draw.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Draw.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Draw.Shapes.DrawArc(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ X Location of Rectangle as Integer
+ Y Location of Rectangle as Integer
+ Width of the Rectangle as Integer
+ Height of the Rectangle as Integer
+ Starting Angle
+ Sweep Angle
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="a"></param>
+ <param name="s"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawBezier(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Create a curved line from 4 points
+ x axis
+ y axis
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="x1"></param>
+ <param name="y1"></param>
+ <param name="x2"></param>
+ <param name="y2"></param>
+ <param name="x3"></param>
+ <param name="y3"></param>
+ <param name="x4"></param>
+ <param name="y4"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawBeziers(System.Drawing.Point[],System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Create Multiple Curved Bezier Lines
+ using an array of Point()
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="points"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawClosedCurve(System.Drawing.Point[],System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a closed curve
+ using an array of Point()
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="points"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawCurve(System.Drawing.Point[],System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Curve using an array of Point()
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="points"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawEllipse(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ X Location of Rectangle as Integer
+ Y Location of Rectangle as Integer
+ Width of the Rectangle as Integer
+ Height of the Rectangle as Integer
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawIcon(System.String,System.Int32,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw an Icon .ico to the X,Y location
+ using "c:\Path"
+ </summary>
+ <param name="path"></param>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawIconUnstretched(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw an Icon .ico to the X,Y location of a
+ rectangle using "c:\Path"
+ </summary>
+ <param name="path"></param>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawImage(System.Drawing.Image,System.Drawing.PointF,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw an picture as Image,
+ point as PointF
+ </summary>
+ <param name="image"></param>
+ <param name="point"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawImageUnscaled(System.Drawing.Image,System.Drawing.Point,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw an picture as Image unscaled,
+ point as Point 
+ </summary>
+ <param name="image"></param>
+ <param name="point"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawImageUnscaledandClipped(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Image,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw an picture As Image unscaled and clipped,
+ Load a pic into an Image, then pass the image to here.
+ X Location of Rectangle as Integer
+ Y Location of Rectangle as Integer
+ Width of the Rectangle as Integer
+ Height of the Rectangle as Integer 
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="image"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawLine(System.Drawing.Point,System.Drawing.Point,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Starting Point as Point,
+ Ending Point as Point,
+ Color of the Rectangle Outline as Color,
+ Pen Width of the Rectangle Outline as Integer,
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="pt1"></param>
+ <param name="pt2"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawLines(System.Drawing.PointF[],System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw Lines using an Array of PointF()
+ Color of the Rectangle Outline as Color,
+ Pen Width of the Rectangle Outline as Integer,
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="points"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawPath(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a path using Drawing2D.GraphicsPath
+ Color of the Rectangle Outline as Color,
+ Pen Width of the Rectangle Outline as Integer,
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="path"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawPie(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ X Location of Rectangle as Integer
+ Y Location of Rectangle as Integer
+ Width of the Rectangle as Integer
+ Height of the Rectangle as Integer
+ Starting Angle
+ Sweep Angle
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="a"></param>
+ <param name="s"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawPolygon(System.Drawing.PointF[],System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Polygon using PointF()
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="points"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawRectangle(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ X Location of Rectangle as Integer
+ Y Location of Rectangle as Integer
+ Width of the Rectangle as Integer
+ Height of the Rectangle as Integer
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawRectangle(System.Drawing.Rectangle,System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ r as Rectangle
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="r"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawPolygon(System.Drawing.RectangleF[],System.Drawing.Color,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw Multiple Rectangles as RectangleF()
+ Color of the Rectangle Outline as Color
+ Pen Width of the Rectangle Outline as Integer
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="rects"></param>
+ <param name="col"></param>
+ <param name="pw"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawString(System.String,System.Drawing.Font,System.Drawing.Brush,System.Drawing.PointF,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a string as String,
+ f as Font,
+ b as,
+ </summary>
+ <param name="s"></param>
+ <param name="f"></param>
+ <param name="b"></param>
+ <param name="p"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledClosedCurve(System.Drawing.Brush,System.Drawing.PointF[],System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Closed Curve
+ b as Brushes, points as PointF()
+ </summary>
+ <param name="b"></param>
+ <param name="points"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledEllipse(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Brush,System.Drawing.Rectangle,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Ellipse as Rectangle,
+ X Location of Rectangle as Integer,
+ Y Location of Rectangle as Integer,
+ Width of the Rectangle as Integer,
+ Height of the Rectangle as Integer,
+ b as Brush, points as PointF(),
+ rect as Rectangle
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="b"></param>
+ <param name="rect"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledPath(System.Drawing.Brush,System.Drawing.Drawing2D.GraphicsPath,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Path as Drawing2D.GraphicsPath,
+ b as brushes,
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="b"></param>
+ <param name="path"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledPie(System.Drawing.Brush,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Pie as Rectangle,
+ b as Brushes,
+ x Location as integer,
+ y location as integer,
+ width as integer,
+ height as integer,
+ Starting Angle a as integer,
+ Sweep Angle s as integer,
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="b"></param>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="a"></param>
+ <param name="s"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledPath(System.Drawing.Brush,System.Drawing.PointF[],System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Path with points as PointF(),
+ b as Brushes
+ Taken from the signature, e as PaintEventArgs
+ </summary>
+ <param name="b"></param>
+ <param name="points"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledRectangle(System.Drawing.Brush,System.Drawing.Rectangle,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Rectangle,
+ b as Brush,
+ r as Rectangle,
+ Taken from the signature, e as PaintEventArgs 
+ </summary>
+ <param name="b"></param>
+ <param name="r"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledRectangle(System.Drawing.Brush,System.Drawing.Rectangle,System.Drawing.Graphics)">
+ <summary>
+ Draw a Filled Rectangle,
+ b as Brush,
+ r as Rectangle,
+ g as Graphics 
+ </summary>
+ <param name="b"></param>
+ <param name="r"></param>
+ <param name="g"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledRectangle(System.Drawing.Brush,System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Rectangle,
+ b as Brush,
+ x Location as integer,
+ y Location as integer,
+ width as integer,
+ height as integer
+ Taken from the signature, e as PaintEventArgs 
+ </summary>
+ <param name="b"></param>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="width"></param>
+ <param name="height"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledRectangles(System.Drawing.Brush,System.Drawing.Rectangle[],System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw multiple Rectangles using Rectangle()
+ </summary>
+ <param name="b"></param>
+ <param name="rects"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.DrawFilledRegion(System.Drawing.Brush,System.Drawing.Region,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Draw a Filled Region using Region
+ </summary>
+ <param name="b"></param>
+ <param name="r"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.RotateTransform(System.Single,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Rotate e.graphics,
+ Angle a as single
+ </summary>
+ <param name="a"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.ScaleTransform(System.Single,System.Single,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Scale Transformation,
+ x as single,
+ y as single
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="d"></param>
+</member>
+<member name="M:Draw.Shapes.TranslateTransform(System.Single,System.Single,System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Translate Transform,
+ x as single,
+ y as single
+ </summary>
+ <param name="x"></param>
+ <param name="y"></param>
+ <param name="d"></param>
+</member>
+</members>
+</doc>

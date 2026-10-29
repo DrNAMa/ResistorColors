@@ -531,24 +531,4 @@ Public Class Shapedraw
         '  End If
         Return path
     End Function
-
-
-    'Using path As GraphicsPath = BuildPath()
-    'If Points.Count >= 3 Then
-    'Using fillBrush As New SolidBrush(Color.FromArgb(ShapeColor))
-    '                g.FillPath(fillBrush, path)
-    '            End Using
-    'End If
-
-
-    'Using glowPen As New Pen(Color.FromArgb(65, ShapeColor), 10.0F)
-    '            glowPen.LineJoin = LineJoin.Round
-    '            g.DrawPath(glowPen, path)
-    '        End Using
-
-
-    'Using mainPen As New Pen(ShapeColor)
-    '            g.DrawPath(mainPen, path)
-    '        End Using
-    'End Using
 End Class
